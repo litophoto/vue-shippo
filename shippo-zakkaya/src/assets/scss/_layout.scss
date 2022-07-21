@@ -1,0 +1,45 @@
+$breakpoints: (
+  'sm': 480,
+  'md': 640,
+  'lg': 1024,
+);
+
+$grid-row-size: 12;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@each $infix, $breakpoint in $breakpoints {
+  @media screen and (min-width: #{$breakpoint}px) {
+    @for $i from 1 through $grid-row-size {
+      .col-#{$infix}-#{$i} {
+        flex: 0 0 auto;
+        width: calc(#{$i}/#{$grid-row-size} * 100%);
+      }
+    }
+  }
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+.justify-conetnt-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.align-items-center {
+  align-items: center;
+}
+.spread-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+// placement
+.text-center {
+  text-align: center;
+}

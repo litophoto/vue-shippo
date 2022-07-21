@@ -1,21 +1,34 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
+import Menu from './components/parts/Menu.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <Menu />
+  test
+  <button class="btn">button</button>
+  <form action="" class="form-group">
+    <input type="text" class="form-control">
+    <label for="" class="label">label</label>
+  </form>
+  <div class="row">
+    <div class="col-sm-6">a</div>
+    <div class="col-sm-6">b</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="bg-primary">a</div>
+    </div>
+    <div class="col-sm-3">
+      <div class="text-primary">b</div>
+    </div>
+    <div class="col-sm-3">
+      <a href="#" class="decoration-none">link</a>
+    </div>
+  </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
