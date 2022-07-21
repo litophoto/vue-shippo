@@ -2,11 +2,13 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import Menu from './components/parts/Menu.vue'
+import SlideShow from './components/parts/SlideShow.vue'
 </script>
 
 <template>
-  <Menu />
-  test
+  <Menu class="m-2"></Menu>
+  <SlideShow />
+  <!-- test
   <button class="btn">button</button>
   <form action="" class="form-group">
     <input type="text" class="form-control">
@@ -26,7 +28,7 @@ import Menu from './components/parts/Menu.vue'
     <div class="col-sm-3">
       <a href="#" class="decoration-none">link</a>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <style>
