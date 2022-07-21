@@ -1,7 +1,7 @@
-$bg-color: #b3d4fc;
+$bg-color: #ECF1E9;
 $text-color: #000;
 $color-set: (
-  'primary': #aaaaaa,
+  'primary': #467805,
   'secondary': #bbbbbb,
   'alart': #ffbbbb,
   'warning': #ffffbb,
@@ -14,6 +14,12 @@ $margin-size: (
   '2': 1rem,
   '3': 2rem,
 );
+
+// TODO: put this code other.
+body {
+  color: $text-color;
+  background-color: $bg-color;
+}
 
 // background color
 @each $key, $value in $color-set {
